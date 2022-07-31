@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #282c34;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+/* layout Taschenrechner */
+
+.taschenrechner__container {
+  margin: 10px 0 10px 0;
+  display: grid;
+  max-width: 340px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.input__container {
+  padding-right: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+  color: white;
+}
+
+.output__small {
+  padding-right: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+  color: white;
+}
+
+.ergebnis_container {
+  max-width: 330px;
+  height: 80px;
+  padding: 0 20px 0 20px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+#ausgabe {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+/* layout Tasten */
+
+.button__container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 8;
+  color: white;
+  gap: 10px;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: unset;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgba(61, 64, 66, 0.35) 0px -2px 6px 0px inset;
+}
+
+button:active {
+  background-color: inherit;
+}
+
+#zero {
+  min-width: 160px;
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 6;
+  border-radius: 50px;
+}
+
+#komma {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 6;
+}
+
+#berechnen,
+#plus,
+#subtrahieren,
+#multiplizieren,
+#dividieren {
+  background-color: orange;
+}
+
+#berechnen:active,
+#plus:active,
+#subtrahieren:active,
+#multiplizieren:active,
+#dividieren:active {
+  background-color: rgb(235, 215, 179);
+}
+
+#placeholder {
+  background-color: #282c34;
+  box-shadow: none;
+}

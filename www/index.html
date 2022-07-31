@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Fancy Calculator</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Taschenrechner Layout -->
+      <div class="taschenrechner__container">
+        <div class="input__container" id="input__container"></div>
+        <div class="output__small" id="output__small"></div>
+        <div class="ergebnis_container">
+          <p id="ausgabe"></p>
+        </div>
+        <div class="button__container">
+          <button class="btn" id="ac" value="">AC</button>
+          <button class="btn" id="delete" value="">del</button>
+          <button class="btn" id="placeholder" value="">🤔</button>
+          <button class="btn" id="dividieren" value="/">/</button>
+          <button class="btn" id="8" value="8">8</button>
+          <button class="btn" class="btn" id="7" value="7">7</button>
+          <button class="btn" id="9" value="9">9</button>
+          <button class="btn" id="multiplizieren" value="*">*</button>
+          <button class="btn" id="4" value="4">4</button>
+          <button class="btn" id="5" value="5">5</button>
+          <button class="btn" id="6" value="6">6</button>
+          <button class="btn" id="subtrahieren" value="-">-</button>
+          <button class="btn" id="one" value="1">1</button>
+          <button class="btn" id="2" value="2">2</button>
+          <button class="btn" id="3" value="3">3</button>
+          <button class="btn" id="plus" value="+">+</button>
+          <button class="btn" id="zero" value="0">0</button>
+          <button class="btn" id="komma" value=".">,</button>
+          <button class="btn" id="berechnen">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/operations.js"></script>
+  </body>
+</html>
