@@ -24,7 +24,7 @@ function berechnen() {
   let container = document.getElementById("ausgabe");
   let outputSmall = document.getElementById("output__small");
   let result = eval(container.innerHTML);
-  container.innerHTML = result;
+  container.innerHTML = Math.floor(result * 100) / 100;
   outputSmall.innerHTML = result;
 }
 
