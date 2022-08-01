@@ -1,10 +1,4 @@
 const $ = (selector) => document.querySelector(selector);
-
-/* document.addEventListener("deviceready", onDeviceReady, false); */
-
-/* function onDeviceReady() {
-  //den Event-Handler für die Schaltfläche registrieren
-  */
 document.getElementById("berechnen").addEventListener("click", berechnen);
 document.getElementById("delete").addEventListener("click", deleteLast);
 document.getElementById("ac").addEventListener("click", deleteAll);
