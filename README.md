@@ -1,4 +1,6 @@
-# *Fancy-Calculator* ![logo_50x50_c](https://user-images.githubusercontent.com/97134175/182013531-3bb2b5f4-9d7b-498e-baa4-d7732bbf6656.png)
+![color_smal_text_condiment](https://user-images.githubusercontent.com/97134175/182014601-0cca2d3e-3142-4705-bb7e-e7a82d2477cb.png)
+
+# *Fancy-Calculator* 
 
 made with **apache** cordova to run on browser and android mobile devices <br />
 Functions: <br />
